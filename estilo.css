@@ -37,7 +37,7 @@ body {
 	opacity: 0%;
 }
 
-/* Telon */
+/* Telon
 
 #telon {
 	display: flex;
@@ -74,7 +74,7 @@ body {
 	animation-fill-mode: forwards;
 	right: 0;
 }
-
+*/
 @keyframes mover-a-izq {
 	0% {
 		left: 0;
