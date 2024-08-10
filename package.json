@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "build:pug": "pug src/pug/index.pug --out ./"
-  }
-}
