@@ -2606,7 +2606,7 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #039be5;
+  color: #2366c7;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -5693,6 +5693,22 @@ body.keyboard-focused .dropdown-content li:focus {
 
 .waves-effect.waves-teal .waves-ripple {
   background-color: rgba(0, 150, 136, 0.7);
+}
+
+.waves-effect.waves-telegram .waves-ripple {
+  background-color: rgba(36, 161, 222, 0.7);
+}
+
+.waves-effect.waves-instagram .waves-ripple {
+  background-color: rgba(225, 48, 108, 0.7);
+}
+
+.waves-effect.waves-linkedin .waves-ripple {
+  background-color: rgba(0, 119, 181, 0.7);
+}
+
+.waves-effect.waves-spotify .waves-ripple {
+  background-color: rgba(30, 215, 96, 0.7);
 }
 
 .waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
