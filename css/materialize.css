@@ -5252,7 +5252,7 @@ small {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: #333; /* Cambiado de #fff (blanco) para que sea gris */
+  color: #555; /* Cambiado de #fff (blanco) para que sea gris */
   background-color: #26a69a;
   text-align: center;
   letter-spacing: .5px;
