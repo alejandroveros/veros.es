@@ -8,13 +8,16 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+        <!-- Banner de cookies styles -->
+        <link type="text/css" rel="stylesheet" href="css/cookie-banner.css"/>
         <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
         <!--Favicon-->
         <link href="/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
         <link href="/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
         <link href="/images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
         <link href="/site.webmanifest" rel="manifest">
+
     </head>
     <body>
         <div class="row">
@@ -68,22 +71,19 @@
         </div>
 
         <!-- Banner de cookies -->
-        <div id="cookie-banner" class="row" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #fff; z-index: 1000; display: none; box-shadow: 0 -2px 5px rgba(0,0,0,0.1);">
-            <div class="col s12">
-                <p style="margin: 15px 0; text-align: center;">
-                    Este sitio usa cookies.
-                    <br>
-                    <br>
-                    <a href="#" id="cancel-cookies" class="btn-small white waves-effect waves-light" style="margin-left: 10px;">
+        <div id="cookie-banner" class="cookie-banner">
+            <div class="cookie-content">
+                <p>Este sitio usa cookies.</p>
+                <div class="cookie-buttons">
+                    <a href="#" id="cancel-cookies" class="btn-small white waves-effect waves-light">
                         Pues no quiero <i class="material-icons right">cancel</i>
                     </a>
-                    <a href="#" id="accept-cookies" class="btn-small white waves-effect waves-light" style="margin-left: 10px;">
+                    <a href="#" id="accept-cookies" class="btn-small white waves-effect waves-light">
                         Vale guapo <i class="material-icons right">check</i>
                     </a>
-                </p>
+                </div>
             </div>
         </div>
-
         <script type="text/javascript" src="js/materialize.js"></script>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "70910dec4e434c289e0f516246ba92f2"}'></script>
         
