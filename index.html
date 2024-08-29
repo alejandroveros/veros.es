@@ -23,7 +23,7 @@
                 <h4>La web de <br><i>Alejandro Veros.</i></h4>
                 <h5>Keep it <del>cutre</del> simple.</h5>
                 <p>Accesible (la propia <a href="https://www.w3.org/TR/WCAG20/">guía de accesibilidad</a> del <a href="https://es.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C</a> es incluso más lamentable que esta web).</p>
-                <p>Ligera, y sin cookies o scripts. Debemos cuidar a la gente que aún usa <a href="https://es.wikipedia.org/wiki/IP_sobre_palomas_mensajeras">IPoAC</a>.</p>
+                <p>Ligera, debemos cuidar a la gente que aún usa <a href="https://es.wikipedia.org/wiki/IP_sobre_palomas_mensajeras">IPoAC</a>.</p>
                 <p>Se ve <i>casi</i> igual en cualquier pantalla.</p>
                 <p>Cualquier idiota puede visitarla sin problema.</p>
                 <small><del>Necesito idiotas para contrastarlo, el contacto está a continuación.</del></small>
@@ -66,6 +66,38 @@
             </div>
         <div class="col" style="width: 5%;"></div>
         </div>
+
+        <!-- Banner de cookies -->
+        <div id="cookie-banner" class="row" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #fff; z-index: 1000; display: none; box-shadow: 0 -2px 5px rgba(0,0,0,0.1);">
+            <div class="col s12">
+                <p style="margin: 15px 0; text-align: center;">
+                    Este sitio utiliza cookies. Al continuar navegando aceptas su uso.
+                    <a href="#" id="accept-cookies" class="btn-small white waves-effect waves-light" style="margin-left: 10px;">
+                        Aceptar <i class="material-icons right">check</i>
+                    </a>
+                </p>
+            </div>
+        </div>
+
         <script type="text/javascript" src="js/materialize.js"></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "70910dec4e434c289e0f516246ba92f2"}'></script>
+        
+        <!-- Script para manejar el banner de cookies -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var cookieBanner = document.getElementById('cookie-banner');
+                var acceptButton = document.getElementById('accept-cookies');
+
+                if (!localStorage.getItem('cookiesAccepted')) {
+                    cookieBanner.style.display = 'block';
+                }
+
+                acceptButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    localStorage.setItem('cookiesAccepted', 'true');
+                    cookieBanner.style.display = 'none';
+                });
+            });
+        </script>
     </body>
 </html>
