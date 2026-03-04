@@ -1,3 +1,3 @@
-veros.es
+# veros.es
 
-En algún momento me pondré a completar esto.. :)
+Web personal de Alejandro Veros — [veros.es](https://veros.es)
