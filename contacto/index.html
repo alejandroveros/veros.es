@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto — Alejandro Veros</title>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var a = document.createElement('a');
+      a.href = '/contacto/alejandro-veros.vcf';
+      a.download = 'alejandro-veros.vcf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+  </script>
+</head>
+<body>
+  <p>Descargando contacto... <a href="/contacto/alejandro-veros.vcf" download="alejandro-veros.vcf">Haz clic aquí si no empieza solo.</a></p>
+</body>
+</html>
